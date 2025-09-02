@@ -468,7 +468,7 @@ nav .end_nav .phone__day {
 
 .header_bg {
   position: relative;
-  background-image: url("/assets/header.jpeg");
+  background-image: url("./assets/header.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -583,7 +583,7 @@ nav .end_nav .phone__day {
 /* Заказать работы */
 
 .steps {
-  background-image: url("/assets/paper.jpg");
+  background-image: url("./assets/paper.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -711,7 +711,7 @@ nav .end_nav .phone__day {
 
 .advantages_bg {
   position: relative;
-  background-image: url("/assets/paper.jpg");
+  background-image: url("./assets/paper.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -837,7 +837,7 @@ nav .end_nav .phone__day {
 
 .our_works_bg {
   position: relative;
-  background-image: url("/assets/paper.jpg");
+  background-image: url("./assets/paper.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -974,7 +974,7 @@ nav .end_nav .phone__day {
 
 .about_us_bg {
   position: relative;
-  background-image: url("/assets/paper.jpg");
+  background-image: url("./assets/paper.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1058,7 +1058,7 @@ nav .end_nav .phone__day {
 
 .reviews_bg {
   position: relative;
-  background-image: url("/assets/paper.jpg");
+  background-image: url("./assets/paper.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
