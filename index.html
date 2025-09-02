@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>проштукатурка</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div class="modal_bgg">
+      <div class="modal">
+        <div class="modal_img">
+          <img
+            src="https://90.img.avito.st/image/1/1.ciYqmba53s8cMBzKQsBbT_U62MWeutYNmzrcy5Yw1M0.OWZJVRQerrvxwEPaHngiLT0ORtcCawfhMWaMaOHAEgg"
+            alt=""
+            
+          />
+        </div>
+        <div class="modal_form">
+          <div class="span__img">
+            <span>Оставьте заявку! </span>
+            <img src="/assets/close.svg" alt="" class="close" />
+          </div>
+          <div class="form_in">
+            <label for="name">Ваше имя * </label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form_in">
+            <label for="number">Ваш телефон * </label>
+            <input type="number" name="number" id="number" />
+          </div>
+          <div class="form_in">
+            <label for="comment">Ваш комментарий </label>
+            <textarea name="comment" id="comment"></textarea>
+          </div>
+          <div class="policy_div">
+            <input type="checkbox" name="" id="" />
+            <p class="policy-data">
+              <span class="policy-message">Я согласен(-на) на обработку </span
+              ><a
+                href="https://xn--80aa2abrfhdpcid3d.xn--p1ai/files/policy_20250721095859.pdf"
+                class="policy-link"
+                target="_blank"
+                >персональных&nbsp;данных</a
+              >
+            </p>
+          </div>
+          <button>Отправить!</button>
+          <p class="policy-data policy-data-new">
+            <span class="policy-message"
+              >Этот сайт защищен reCAPTCHA и регулируется
+            </span>
+            <a
+              href="https://policies.google.com/privacy"
+              class="policy-link"
+              target="_blank"
+              >Политикой конфиденциальности</a
+            >
+            <span class="policy-message"> и </span>
+            <a
+              href="https://policies.google.com/terms"
+              class="policy-link"
+              target="_blank"
+              >Условиями использования</a
+            >
+            <span class="policy-message"> компании Google.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+      <div class="wrapper">
+        <div class="nav">
+          <div class="logo__ul">
+            <img src="/assets/logo.png" alt="logo" class="logo" />
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a class="menu-item-text" href="#about">
+                  <span>О нас</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item-text" href="#our_works">
+                  <span>Портфолио</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item-text" href="#steps">
+                  <span>Этапы</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item-text" href="#reviews">
+                  <span>Отзывы</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item-text" href="#stati">
+                  <span>Статьи</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="num__btn">
+            <div class="end_nav">
+              <img src="/assets/phone.svg" style="width: 25px" />
+              <div class="phone__day">
+                <a href="tel:%20+7%20931%20009%2082%2095"
+                  ><strong>+7 931 009 82 95</strong></a
+                >
+                <strong>Пн.-Вс. с 9:00 до 20:00</strong>
+              </div>
+            </div>
+            <button class="call_btn">Перезвоните мне!</button>
+          </div>
+          <div class="hamburger" onclick="toggleMenu(this)">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobileNav">
+      <ul class="menu-list">
+        <li class="menu-item"><a href="#about">О нас</a></li>
+        <li class="menu-item"><a href="#our_works">Портфолио</a></li>
+        <li class="menu-item"><a href="#steps">Этапы</a></li>
+        <li class="menu-item"><a href="#reviews">Отзывы</a></li>
+        <li class="menu-item"><a href="#stati">Статьи</a></li>
+      </ul>
+
+      <div class="mobile_num__btn">
+        <div class="mobile_end_nav">
+          <img src="/assets/phone.svg" style="width: 25px" />
+          <div class="mobile_phone__day">
+            <a href="tel:+79310098295"><strong>+7 931 009 82 95</strong></a>
+            <strong>Пн.-Вс. с 9:00 до 20:00</strong>
+          </div>
+        </div>
+        <button class="mobile_call_btn">Перезвоните мне!</button>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header_bg">
+      <div class="header_bl_bg"></div>
+      <div class="wrapper">
+        <div class="header_text">
+          <h1>Механизированная штукатурка стен</h1>
+          <h3>в Москве и Московской области</h3>
+          <h2>от 350 руб/м²</h2>
+          <button>Рассчитать стоимость</button>
+        </div>
+      </div>
+    </div>
+
+    <!--   Заказать работы  -->
+    <section class="steps" id="steps">
+      <div class="wrapper">
+        <h2>Заказать работы - <span>ПРОСТО!</span></h2>
+        <div class="steps-container">
+          <div class="line"></div>
+          <div class="step">
+            <div class="step-number">1</div>
+            <div>
+              <h3>Оставьте заявку</h3>
+              <p>
+                Оставляете заявку на замер по телефону или по форме обратной
+                связи
+              </p>
+              <button class="step-btn">Заполнить заявку!</button>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div>
+              <h3>Мы позвоним</h3>
+              <p>
+                Наш специалист свяжется с вами и обсудит все необходимые вопросы
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div>
+              <h3>Бесплатный замер</h3>
+              <p>
+                На объект выезжает инженер-сметчик, измеряет объём работ и
+                определяет точную стоимость
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <div>
+              <h3>Заключаем договор</h3>
+              <p>Указываем перечень работ, сроки, стоимость и порядок оплаты</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">5</div>
+            <div>
+              <h3>Выполняем работу</h3>
+              <p>
+                Выполняем и сдаем работу, а вы принимаете результат и
+                оплачиваете
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Преимущества -->
+    <div class="advantages_bg">
+      <div class="adv_bg_bl"></div>
+      <div class="wrapper">
+        <div class="advantages">
+          <div class="advantages_text">
+            <span>Преимущества</span>
+            <p>
+              Конечно самым главным преимуществом является цена, так как вы в
+              первую очередь экономите на материале. Так как механическая
+              штукатурка дешевле, чем ручная и расход у механической штукатурки
+              меньше, чем у ручной
+            </p>
+            <button>Получить консультацию!</button>
+          </div>
+          <div class="advantages_line"></div>
+          <div class="advantages_cards">
+            <div class="card">
+              <img src="/assets/fast.svg" alt="" />
+              <span>Быстро!</span>
+              <p>
+                Мы за 2 часа сможем приехать к вам, установить оборудование и
+                приступить к работе
+              </p>
+            </div>
+            <div class="card">
+              <img src="/assets/bitcoin.svg" alt="" />
+              <span>Недорого! </span>
+              <p>
+                Низкая цена рассчитывается из-за того что скорость работы в
+                несколько раз быстрее и вам не приходится платить за лишние часы
+                при ручной работе
+              </p>
+            </div>
+            <div class="card">
+              <img src="/assets/check-circle.svg" alt="" />
+              <span>Качественно! </span>
+              <p>
+                Раствор, который подготовлен машиной, отличается лучшим
+                качеством. Смесь подается под давлением, следовательно,
+                улучшается сцепление состава со стеной.
+              </p>
+            </div>
+            <div class="card">
+              <img src="/assets/ecology.svg" alt="" />
+              <span>Экологично! </span>
+              <p>
+                Мы используем материалы только высокого качества, которые не
+                содержат химических примесей и не имеет посторонних запахов
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Наши работы -->
+    <div class="our_works_bg" id="our_works">
+      <div class="wrapper">
+        <div class="our_works">
+          <h2>Наши работы</h2>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="https://i.pinimg.com/originals/04/9f/e9/049fe99516cf168e925fe2b2f6292969.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://80.img.avito.st/image/1/1.TNmBH7a84DDvtwA6lX5PjXa85jo_ZOnQP7ziPCm-6hA7hCozNw.sAUFWTfaAfs2G-2t3CAc5dGSf7ZFflkQMJecT_G6cP4"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://avatars.mds.yandex.net/i?id=cee26bf9bc913ea01fda59c2e6bbdf5d_l-5190933-images-thumbs&n=13"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://avatars.dzeninfra.ru/get-zen_doc/1790220/pub_5e4cc82eb38ee002b5fbf4f7_5e4cc8e3c6e52572332e2364/scale_1200"
+                />
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- Other swipers -->
+          <div class="extra-swipers">
+            <!-- Swiper #1 -->
+            <div class="swiper swiperSingle1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="https://i.pinimg.com/originals/04/9f/e9/049fe99516cf168e925fe2b2f6292969.jpg"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://80.img.avito.st/image/1/1.TNmBH7a84DDvtwA6lX5PjXa85jo_ZOnQP7ziPCm-6hA7hCozNw.sAUFWTfaAfs2G-2t3CAc5dGSf7ZFflkQMJecT_G6cP4"
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Swiper #2 -->
+            <div class="swiper swiperSingle2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="https://avatars.mds.yandex.net/i?id=cee26bf9bc913ea01fda59c2e6bbdf5d_l-5190933-images-thumbs&n=13"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://avatars.dzeninfra.ru/get-zen_doc/1790220/pub_5e4cc82eb38ee002b5fbf4f7_5e4cc8e3c6e52572332e2364/scale_1200"
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- О нас -->
+    <div class="about_us_bg" id="about">
+      <div class="about_us_bg_bl"></div>
+      <div class="wrapper">
+        <div class="about_us">
+          <h2>О нас</h2>
+          <div class="about_us_line"></div>
+          <p>
+            На протяжении 11 лет мы работаем в сфере строительства и ремонта
+            любых объектов недвижимости. Наши мастера повседневно повышают свой
+            опыт и мастерство. За долгие годы работы мы изучили все необходимые
+            тонкости в механической штукатурке любых поверхностей стен, потолков
+            или пола. И с лёгкостью решаем поставленные перед нами задачи.
+          </p>
+          <button>Вызвать мастера!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Отзывы -->
+    <div class="reviews_bg" id="reviews">
+      <div class="wrapper">
+        <div class="reviews">
+          <h2>Отзывы наших клиентов</h2>
+
+          <div class="swiper reviewsSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="reviews_card">
+                  <p>
+                    "Я остался очень доволен работой компании. Штукатурка
+                    выполнена быстро и качественно, стены выглядят идеально."
+                  </p>
+                  <div class="fullName">
+                    <img
+                      src="https://t3.ftcdn.net/jpg/06/99/46/60/360_F_699466075_DaPTBNlNQTOwwjkOiFEoOvzDV0ByXR9E.jpg"
+                      alt=""
+                    />
+                    <span>Александр Петров</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="reviews_card">
+                  <p>
+                    "Отличная работа! Все сделали быстро и профессионально.
+                    Обязательно обращусь снова."
+                  </p>
+                  <div class="fullName">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/32.jpg"
+                      alt=""
+                    />
+                    <span>Иван Сергеев</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="reviews_card">
+                  <p>
+                    "Очень вежливые мастера, всё объяснили и сделали на высшем
+                    уровне."
+                  </p>
+                  <div class="fullName">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/44.jpg"
+                      alt=""
+                    />
+                    <span>Мария Иванова</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="reviews_card">
+                  <p>"Прекрасное качество! Рекомендую друзьям и знакомым."</p>
+                  <div class="fullName">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/60.jpg"
+                      alt=""
+                    />
+                    <span>Елена Смирнова</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews-button-next">
+              <img src="/assets/right-arrow.svg" alt="" />
+            </div>
+            <div class="reviews-button-prev">
+              <img
+                src="/assets/right-arrow.svg"
+                alt=""
+                style="transform: rotate(180deg)"
+              />
+            </div>
+          </div>
+
+          <div class="call_div">
+            <div class="call_textt">
+              <h2>Звоните и мы ответим на все ваши вопросы</h2>
+              <div class="linee"></div>
+              <a href="tel:+79310098295"> +7 931 009 82 95 </a>
+            </div>
+            <div class="call_action">
+              <button><a href="tel:+79310098295">Звоните!</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Статьи -->
+    <div class="wrapper" id="stati">
+      <div class="articles">
+        <h2>Статьи</h2>
+        <iframe
+          src="https://www.youtube.com/embed/6utbPJauafU?si=2uiroyrvidTE_BvU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          style="border-radius: 20px; margin-top: 20px"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="wrapper">
+      <footer>
+        <img src="/assets/logo.png" alt="" />
+        <ul>
+          <li style="text-decoration: underline">Время</li>
+          <li>Пн.-Вс. с 9:00 до 20:00</li>
+        </ul>
+        <ul>
+          <li style="text-decoration: underline">Контакты</li>
+          <li><a href="tel:+79310098295">+7 931 009 82 95</a></li>
+          <li>PLASTER99@YANDEX.RU</li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
