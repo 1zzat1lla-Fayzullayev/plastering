@@ -264,6 +264,19 @@ nav .end_nav .phone__day {
   font-size: 18px;
 }
 
+.call_a{
+  text-decoration: none;
+  color: black;
+}
+
+.call_a::before{
+  position: static;
+}
+
+.call_a:hover{
+  position: static;
+}
+
 .num__btn {
   display: flex;
   align-items: center;

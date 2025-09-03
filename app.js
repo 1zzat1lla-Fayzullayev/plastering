@@ -74,30 +74,30 @@ const reviewsSwiper = new Swiper(".reviewsSwiper", {
 });
 
 // modal
-document.addEventListener("DOMContentLoaded", () => {
-  const modalBg = document.querySelector(".modal_bgg");
-  const closeModal = document.querySelector(".modal .close");
+// document.addEventListener("DOMContentLoaded", () => {
+//   const modalBg = document.querySelector(".modal_bgg");
+//   const closeModal = document.querySelector(".modal .close");
 
-  const modalButtons = document.querySelectorAll(
-    ".call_btn, .mobile_call_btn, .step-btn, .advantages button, .about_us button, .header_text button"
-  );
+//   const modalButtons = document.querySelectorAll(
+//     ".call_btn, .mobile_call_btn, .step-btn, .advantages button, .about_us button, .header_text button"
+//   );
 
-  modalButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      modalBg.classList.add("active");
-      document.body.style.overflow = "hidden";
-    });
-  });
+//   modalButtons.forEach((btn) => {
+//     btn.addEventListener("click", () => {
+//       modalBg.classList.add("active");
+//       document.body.style.overflow = "hidden";
+//     });
+//   });
 
-  closeModal.addEventListener("click", () => {
-    modalBg.classList.remove("active");
-    document.body.style.overflow = "";
-  });
+//   closeModal.addEventListener("click", () => {
+//     modalBg.classList.remove("active");
+//     document.body.style.overflow = "";
+//   });
 
-  modalBg.addEventListener("click", (e) => {
-    if (e.target === modalBg) {
-      modalBg.classList.remove("active");
-      document.body.style.overflow = "";
-    }
-  });
-});
+//   modalBg.addEventListener("click", (e) => {
+//     if (e.target === modalBg) {
+//       modalBg.classList.remove("active");
+//       document.body.style.overflow = "";
+//     }
+//   });
+// });
