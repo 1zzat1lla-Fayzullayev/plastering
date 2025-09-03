@@ -12,6 +12,7 @@ html,
 body {
   scroll-behavior: smooth;
   position: relative;
+  scroll-padding-top: 100px;
 }
 
 input::-webkit-outer-spin-button,
