@@ -185,7 +185,7 @@ nav {
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -1359,7 +1359,7 @@ nav .end_nav .phone__day {
 
 footer {
   display: flex;
-  align-items: start;
+  align-items: end;
   justify-content: space-between;
   padding-bottom: 20px;
 }
