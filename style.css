@@ -318,17 +318,18 @@ nav .end_nav .phone__day {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: calc(100vh - 75px);
+  height: calc(100vh - 55px);
   width: 100%;
   background: #727676;
   padding: 20px;
   transform: translateY(100%);
   transition: transform 0.4s ease-in-out;
   z-index: 990;
-  padding-top: 80px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mobileNav.active {
@@ -342,6 +343,29 @@ nav .end_nav .phone__day {
   gap: 20px;
   padding: 0;
   margin: 0;
+  margin-top: 20px;
+  -webkit-padding-start: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .mobileNav {
+    padding-top: 90px !important;
+  }
+
+  .mobileNav .menu-list {
+    margin-top: 0 !important;
+    padding-top: 20px !important;
+  }
+}
+
+.mobileNav ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-margin-before: 0 !important;
+  -webkit-margin-after: 0 !important;
+  -webkit-padding-start: 0 !important;
 }
 
 .mobileNav .menu-list a {
@@ -409,6 +433,7 @@ nav .end_nav .phone__day {
   font-weight: 700;
   font-size: 18px;
   cursor: pointer;
+  color: black;
 }
 
 .mobile_num__btn .mobile_call_btn:hover {
@@ -432,16 +457,14 @@ nav .end_nav .phone__day {
     gap: 20px;
   }
 }
-@media screen and (max-width: 920px) {
+
+@media screen and (max-width: 992px) {
   .num__btn .call_btn {
     font-size: 14px;
   }
   nav .logo {
     width: 70px;
   }
-}
-
-@media screen and (max-width: 992px) {
   nav .menu-list {
     display: none;
   }
@@ -457,9 +480,8 @@ nav .end_nav .phone__day {
 }
 
 @media screen and (max-width: 768px) {
-  nav {
-    padding-left: 20px;
-    padding-right: 20px;
+  nav .logo {
+    width: 50px;
   }
 }
 
@@ -580,7 +602,7 @@ nav .end_nav .phone__day {
   .header_text button {
     width: 328px;
     height: 70px;
-    margin-top: 30px;
+    margin-top: 70px;
   }
 }
 
@@ -843,7 +865,7 @@ nav .end_nav .phone__day {
   .advantages_text p {
     font-size: 16px;
     margin-bottom: 50px;
-    padding-bottom: 5px;
+    padding: 10px 0 10px 0;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     max-width: 250px;
@@ -1264,7 +1286,7 @@ nav .end_nav .phone__day {
 }
 
 @media screen and (max-width: 768px) {
-  .reviews_card{
+  .reviews_card {
     width: 100%;
   }
   .reviews h2 {
@@ -1343,5 +1365,10 @@ footer ul li a {
   footer {
     flex-direction: column;
     gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  footer img{
+    width: 180px;
   }
 }
