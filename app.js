@@ -1,6 +1,5 @@
 const mobileNav = document.querySelector(".mobileNav");
-const navLinks = document.querySelectorAll(".mobileNav a"); 
-
+const navLinks = document.querySelectorAll(".mobileNav a");
 
 function toggleMenu(hamburger) {
   hamburger.classList.toggle("active");
@@ -14,7 +13,6 @@ navLinks.forEach((link) => {
     mobileNav.classList.remove("active");
   });
 });
-
 
 // Asosiy swiper
 const swiper = new Swiper(".mySwiper", {
@@ -58,15 +56,11 @@ const reviewsSwiper = new Swiper(".reviewsSwiper", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
+  watchOverflow: true, 
 
   navigation: {
     nextEl: ".reviews-button-next",
     prevEl: ".reviews-button-prev",
-  },
-
-  pagination: {
-    el: ".reviewsSwiper .swiper-pagination",
-    clickable: true,
   },
 
   breakpoints: {
@@ -91,12 +85,12 @@ document.addEventListener("DOMContentLoaded", () => {
   modalButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       modalBg.classList.add("active");
-      document.body.style.overflow = "hidden"; 
+      document.body.style.overflow = "hidden";
     });
   });
 
   closeModal.addEventListener("click", () => {
-    modalBg.classList.remove("active"); 
+    modalBg.classList.remove("active");
     document.body.style.overflow = "";
   });
 
