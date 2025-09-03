@@ -185,7 +185,7 @@ nav {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -264,16 +264,16 @@ nav .end_nav .phone__day {
   font-size: 18px;
 }
 
-.call_a{
+.call_a {
   text-decoration: none;
   color: black;
 }
 
-.call_a::before{
+.call_a::before {
   position: static;
 }
 
-.call_a:hover{
+.call_a:hover {
   position: static;
 }
 
@@ -415,7 +415,7 @@ nav .end_nav .phone__day {
   text-decoration: underline !important;
 }
 
-.mobile_phone__day .day{
+.mobile_phone__day .day {
   font-size: 14px;
 }
 
@@ -1216,7 +1216,7 @@ nav .end_nav .phone__day {
 }
 
 .reviews-button-prev {
-  left: -50px;
+  left: 0;
 }
 
 .reviews-button-next::after,
@@ -1351,9 +1351,13 @@ nav .end_nav .phone__day {
 }
 
 /* Footer */
+.footer_bg {
+  background-color: rgba(128, 128, 128, 0.226);
+  padding-top: 30px;
+  margin-top: 150px;
+}
 
 footer {
-  margin-top: 80px;
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -1386,13 +1390,13 @@ footer ul li a {
     align-items: center;
     text-align: center;
   }
-  footer img{
+  footer img {
     width: 180px;
   }
-  footer .time{
-    font-size: 16px
+  footer .time {
+    font-size: 16px;
   }
-  footer .phoneNum{
+  footer .phoneNum {
     opacity: 0.6;
     margin-top: 10px;
   }
