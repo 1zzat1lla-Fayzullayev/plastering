@@ -402,6 +402,10 @@ nav .end_nav .phone__day {
   text-decoration: underline !important;
 }
 
+.mobile_phone__day .day{
+  font-size: 14px;
+}
+
 .mobileNav.active .menu-item:nth-child(1) {
   transition-delay: 0.1s;
 }
@@ -428,10 +432,11 @@ nav .end_nav .phone__day {
 .mobile_num__btn .mobile_call_btn {
   background-color: #fbb605;
   border: none;
-  padding: 16px;
+  width: 212px;
+  height: 48px;
   border-radius: 10px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   color: black;
 }
