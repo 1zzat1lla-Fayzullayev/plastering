@@ -530,7 +530,7 @@ nav .end_nav .phone__day {
 .header_text {
   position: relative;
   z-index: 3;
-  height: 100vh;
+  height: 58vh;
   display: flex;
   align-items: start;
   justify-content: center;
