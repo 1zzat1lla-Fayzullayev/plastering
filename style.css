@@ -1376,4 +1376,11 @@ footer ul li a {
   footer img{
     width: 180px;
   }
+  footer .time{
+    font-size: 16px
+  }
+  footer .phoneNum{
+    opacity: 0.6;
+    margin-top: 10px;
+  }
 }
